@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finalll</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add your styles for the webpage here */
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box1">
+            <p>B<br>O<br>O<br>K<br><br>Q<br>U<br>E<br>S<br>T</p>
+        </div>
+        <div class="box2">
+            
+            <div>
+                <input type="text" id="searchInput" placeholder="Search for a book" oninput="updateSuggestions()">
+                <button id="search" onclick="searchBook()">Search</button>
+                <ul id="suggestionsList" onclick="selectBook(event)"></ul>
+                
+            </div>
+            <div id="bookInfo">
+                <!-- Book information will be displayed here dynamically -->
+            </div>
+        </div>
+        <div class="box3">
+            
+        </div>
+        <script src="book.js"></script>
+    </div>
+
+
+    <link rel="stylesheet" href="./book.js">
+</body>
+</html>
